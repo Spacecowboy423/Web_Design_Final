@@ -1,0 +1,386 @@
+/* Main box for the Pokémon card */
+.background {
+    height: 400px;
+    width: 300px;
+    background-color: #ffe164;
+    border-radius: 5%;
+    position: absolute;
+}
+
+/* Green box for content on the Pokémon card */
+.content {
+    height: 370px;
+    width: 273px;
+    background-color: #8fc04f;
+    position: relative;
+    top: 3.7%;
+    left: 4.2%;
+}
+
+/* Box to cut corner of frame */
+.topleftCorner {
+    position: relative;
+    height: 10px;
+    width: 10px;
+    transform: rotate(45deg);
+    background-color: #ffe164;
+    top: -5px;
+    left: -5px;
+}
+
+/* Box to cut corner of frame */
+.toprightCorner {
+    position: relative;
+    height: 10px;
+    width: 10px;
+    transform: rotate(45deg);
+    background-color: #ffe164;
+    top: -15px;
+    left: 98%;
+}
+
+/* Box to cut corner of frame */
+.bottomleftCorner {
+    position: relative;
+    height: 10px;
+    width: 10px;
+    transform: rotate(45deg);
+    background-color: #ffe164;
+    left: -5px;
+    top: 93.2%;
+}
+
+/* Box to cut corner of frame */
+.bottomrightCorner {
+    position: relative;
+    height: 10px;
+    width: 10px;
+    transform: rotate(45deg);
+    background-color: #ffe164;
+    left: 98%;
+    top: 90.6%;
+}
+
+/* Space for Image */
+.image {
+    width: 92%;
+    height: 35%;
+    border: 2px solid #b8b7b1;
+    /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [spread radius] [color]; */
+    box-shadow: 0px -1px 5px 0px black;
+    position: absolute;
+    top: 32px;
+    left: 10px;
+}
+
+/* Text Under Image */
+.imageFooter {
+    width: 92%;
+    height: 15px;
+    border: 2px solid #b8b7b1;
+    background-color: #c4c4c7;
+    box-shadow: 0px 2px 4px 0px black;
+    position: relative;
+    top: 33%;
+    left: 10px;
+    line-height: 12px;
+    text-align: center;
+    font-size: 9px;
+}
+
+/* Pokémon Name */
+.headerPokemon {
+    height: 4%;
+    width: 45%;
+    position: absolute;
+    top: 0.25%;
+    left: 10%;
+    font-size: 18pt;
+    font-family: sans-serif;
+}
+
+.pokemonName {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    font-size: 18pt;
+    font-family: sans-serif;
+}
+
+/* HP */
+.hpBox {
+    height: 3%;
+    width: 2%;
+    position: absolute;
+    top: 110%;
+    left: 127%;
+    font-size: 8pt;
+    font-family: sans-serif;
+}
+
+/* Total HP */
+.headerBox {
+    height: 4%;
+    width: 5%;
+    position: absolute;
+    top: 15%;
+    left: 137%;
+    font-family: sans-serif;
+}
+
+/* Pokémon Rarity (Basic) */
+.rarity {
+    height: 80%;
+    width: 35%;
+    position: absolute;
+    background-color: silver;
+    box-shadow: 0px 0px 2px 1px silver;
+    top: 60%;
+    left: -27%;
+    font-size: 8pt;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Type */
+.type {
+    height: 23px;
+    width: 23px;
+    position: absolute;
+    top: 2px;
+    left: 215px;
+}
+
+/* Attack Info */
+.hornLeechContainer {
+    height: 45px;
+    width: 220px;
+    position: absolute;
+    top: 200px;
+    left: 10px;
+    font-family: sans-serif;
+}
+
+/* Horn Leech */
+.hornLeech {
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+    top: -25px;
+}
+
+/* Horn Leech Damage */
+.hornLeechDamage {
+    position: relative;
+    text-align: right;
+    font-size: 16px;
+    top: -42px;
+    left: 25px;
+}
+
+/* Horn Leech Description */
+.hornLeechDescription {
+    position: relative;
+    text-align: left;
+    font-size: 11px;
+    top: -40px;
+}
+
+/* Attack Info */
+.calmStrikeContainer {
+    height: 45px;
+    width: 220px;
+    position: absolute;
+    top: 245px;
+    left: 10px;
+    font-family: sans-serif;
+}
+
+/* Calm Strike */
+.calmStrike {
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+    top: -20px;
+    left: -1px;
+}
+
+/* Calm Strike Damage */
+.calmStrikeDamage {
+    position: relative;
+    text-align: right;
+    font-size: 16px;
+    top: -38px;
+    left: 35px;
+}
+
+/* Calm Strike Description */
+.calmStrikeDescription {
+    position: relative;
+    text-align: left;
+    font-size: 11px;
+    top: -35px;
+}
+
+/* Container for Weakness Info */
+.weaknessContainer {
+    height: 15px;
+    width: 150px;
+    position: absolute;
+    background-color: silver;
+    top: 304px;
+    left: -5px;
+    font-size: 7px;
+    font-family: sans-serif;
+}
+
+/* weakness Text Placement */
+.weaknessText {
+    position: absolute;
+    top: 4px;
+    left: 8px;
+}
+
+/* Container for Weakness Info */
+.weaknessImage {
+    position: absolute;
+    left: 49px;
+    bottom: -0.5px;
+}
+
+/* multiplier Text Placement */
+.multiplier {
+    position: absolute;
+    top: 0px;
+    left: 64px;
+    font-size: 10px;
+}
+
+/* multiplier number Text Placement */
+.multiplierNumber {
+    position: absolute;
+    top: 1px;
+    left: 72px;
+    font-size: 12px;
+}
+
+/* resistance Text Placement */
+.resistance {
+    position: absolute;
+    top: 1px;
+    left: 87px;
+}
+
+/* resistance Image Placement */
+.resistanceImage {
+    position: absolute;
+    top: 0px;
+    left: 45px;
+}
+
+/* resistance Score Text Placement */
+.resistanceScore {
+    position: absolute;
+    top: 1px;
+    left: 60px;
+}
+
+/* Container for retreat information */
+.retreatContainer {
+    height: 15px;
+    width: 95px;
+    position: absolute;
+    background-color: silver;
+    top: 304px;
+    left: 183px;
+    font-size: 7px;
+    font-family: sans-serif;
+}
+
+/* used to place retreat text */
+.retreatPlacement {
+    position: relative;
+    top: 4px;
+    left: -30px;
+}
+
+/* used to place the retreat cost images */
+.retreatCost {
+    position: relative;
+    left: 2px;
+    bottom: 6px;
+}
+
+/* Container for Pokémon Info */
+.infoContainerLeft {
+    height: 35px;
+    width: 100px;
+    position: absolute;
+    top: 333px;
+    left: 20px;
+    font-size: 8px;
+}
+
+/* Description of Copyright for Pokémon */
+.copyrightPokémon {
+    position: relative;
+    text-align: left;
+    bottom: 5px;
+}
+
+/* Placement for Promo Code */
+.promoCode {
+    position: absolute;
+    left: 25px;
+    bottom: 18px;
+    font-size: 8px;
+}
+
+/* Container for Pokémon Info */
+.infoContainerRight {
+    height: 35px;
+    width: 130px;
+    position: absolute;
+    top: 325px;
+    left: 135px;
+}
+
+/* Description of Pokémon */
+.infoPokémon {
+    position: relative;
+    text-align: left;
+    font-size: 8px;
+}
+
+/* Box to cut corner of frame */
+.bottomleftCorner {
+    position: relative;
+    height: 10px;
+    width: 10px;
+    transform: rotate(45deg);
+    background-color: #ffe164;
+    left: -5px;
+    top: 93.2%;
+}
+
+/* Boxes to cut right top and bottom corner of weakness bar and resistance bar */
+.greenCorner {
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    transform: rotate(45deg);
+    background-color: #8fc04f;
+    right: 80px;
+    bottom: 51px;
+}
+
+/* Boxes to cut top and bottom corners of weakness bar and resistance bar */
+.yellowCorner {
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    transform: rotate(45deg);
+    background-color: #ffe164;
+    left: -12px;
+    bottom: 51px;
+}
